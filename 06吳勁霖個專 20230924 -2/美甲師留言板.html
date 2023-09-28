@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小吳Nail</title>
+    <!-- css header連結 -->
+    <link rel="stylesheet" href="./style/header.css">
+    <!-- css footer連結 -->
+    <link rel="stylesheet" href="./style/footer.css">
+    <!-- guestbook連結 -->
+    <link rel="stylesheet" href="./style/美甲師留言板.css">
+    <!-- google fonts連結 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200&family=Noto+Serif+TC:wght@200;400&display=swap"
+        rel="stylesheet">
+    <script src="./javascript/code.jquery.com_jquery-3.7.1.js"></script>
+    <script src="./javascript/t.js"></script>
+
+</head>
+
+<body>
+    <!-- ===header=== -->
+    <header>
+        <div class="logo">
+            <a href="./index.html"> <img src="./img/icon/logo.jpg" alt=""></a>
+        </div>
+        <ul>
+            <li><a href="./index.html">首頁</a></li>
+            <li><a href="./new_page.html">最新款式</a></li>
+            <li class="selection-outter">
+                <a href="./單色跳色.html">款式介紹</a>
+                <span class="first"><a href="./單色跳色.html">單色/跳色</a></span>
+                <span class="second"><a href="./漸層.html">漸層</a></span>
+                <span class="third"><a href="./複雜圖示.html">複雜圖示</a></span>
+            </li>
+            <li><a href="./serve.html">服務介紹</a></li>
+            <li class="selection-outter"><a href="./guestbook.html">留言板</a> <span class="text"><a
+                        href="./美甲師留言板.html">美甲師區</a></span></li>
+            <li><a href="./about.html">關於我們</a></li>
+        </ul>
+
+    </header>
+
+    <!-- banner區域 -->
+    <div class="banner">
+        <div class="textSection">
+            <h1 class="banner-title">小吳Nail留言區</h1>
+            <img src="./img/留言區/nail-polish.png" alt="">
+            <p class="banner-content">創立於1997年致力提供給廣大女性最實惠的美甲服務</p>
+            <p class="banner-content">您寶貴的建議是我們前進的動力</p>
+        </div>
+    </div>
+    <!-- 上傳步驟 -->
+    <section class="upload">
+        <div class="upload-card">
+            <div class="upload-img">
+                <img src="./img/icon/cloud-computing.png" alt="">
+            </div>
+            <div class="upload-cardBody">
+                <h1>步驟一</h1>
+                <p>點擊上傳按鈕，選取最好的樣式上傳</p>
+            </div>
+        </div>
+        <img src="./img/icon/指引列.png" alt="">
+        <div class="upload-card">
+            <div class="upload-img">
+                <img src="./img/icon/input.png" alt="">
+            </div>
+            <div class="upload-cardBody">
+                <h1>步驟二</h1>
+                <p>幫我輸入產品資訊，以及留下您的聯絡方式</p>
+            </div>
+        </div>
+        <img src="./img/icon/指引列.png" alt="">
+        <div class="upload-card">
+            <div class="upload-img">
+                <img src="./img/icon/file.png" alt="">
+            </div>
+            <div class="upload-cardBody">
+                <h1>步驟三</h1>
+                <p>待老闆審核，幫您上傳到專屬作品頁</p>
+            </div>
+        </div>
+        <img src="./img/icon/指引列.png" alt="">
+        <div class="upload-card">
+            <div class="upload-img">
+                <img src="./img/icon/partner.png" alt="">
+            </div>
+            <div class="upload-cardBody">
+                <h1>步驟四</h1>
+                <p>客人與您成功配對</p>
+            </div>
+        </div>
+    </section>
+    <!-- 美甲師作品上傳表單 -->
+    <main>
+        <h1>美甲師留言表單</h1>
+        <div class="dream">
+            <div class="fake-input">
+                <img src="./img/icon/plus.png" alt="" class="fake-img">
+                <input type="file" name="" id="imgFile" class="imgFile" style="opacity: 0;">
+            </div>
+            <div class="preImg">
+            </div>
+            <label for="">產品名稱:</label>
+            <input type="text">
+            <label for="">美甲類別:</label>
+            <input type="text">
+            <label for="">售價:$</label>
+            <input type="number">
+            <label for="">聯繫方式:</label>
+            <input type="text" maxlength="10">
+            <textarea name="" id="" cols="30" rows="10" placeholder="提供作品的描述"></textarea>
+            <div class="submitSection">
+                <button type="submit" class="sub">提交表單</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ===FOOTER=== -->
+    <footer>
+        <section class="left">
+            <img src="./img/icon/logo.jpg" alt="">
+            <p>本網站為緯育TibaMe前端工程師專業技術養成班THD103學員吳勁霖專題作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊 [緯育TibaMe] ，後續會由專人協助處理。</p>
+        </section>
+        <section class="right">
+            <a href=""><img src="./img/icon/facebook.png" alt=""></a>
+            <a href=""><img src="./img/icon/instagram.png" alt=""></a>
+            <a href=""><img src="./img/icon/twitter.png" alt=""></a>
+        </section>
+    </footer>
+    <script src="./美甲師留言板.js"></script>
+</body>
+
+</html>

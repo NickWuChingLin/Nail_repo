@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Serif TC', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #F0A6A6;
+    box-shadow: 1px 1px 3px #F0A6A6;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+
+    div.logo {
+        margin-left: 5%;
+
+        img {
+            width: 100px;
+
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin-right: 5%;
+
+        li {
+            a.-on {
+                // background-color: #F0A6A6;
+                color: #F0A6A6;
+            }
+
+        }
+
+        li.selection-outter {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            // border: 1px solid red;
+            // 點選哪頁的效果
+
+
+            span.first {
+                width: 100%;
+                text-align: center;
+                display: none;
+                position: absolute;
+                font-size: 16px;
+                height: 50px;
+                bottom: -50px;
+                background-color: white;
+                margin: 0 auto;
+                padding: 5px 1px;
+                z-index: 2;
+
+            }
+
+
+
+            span.second {
+                width: 100%;
+                text-align: center;
+                display: none;
+                position: absolute;
+                font-size: 16px;
+                height: 50px;
+                bottom: -90px;
+                background-color: white;
+                margin: 0 auto;
+                padding: 5px 1px;
+                z-index: 3;
+            }
+
+            span.third {
+                width: 100%;
+                text-align: center;
+                display: none;
+                position: absolute;
+                font-size: 16px;
+                height: 40px;
+                bottom: -120px;
+                background-color: white;
+                margin: 0 auto;
+                padding: 5px 1px;
+                z-index: 2;
+            }
+
+            // 美甲師留言板
+            span.text {
+                width: 100px;
+                text-align: center;
+                display: none;
+                position: absolute;
+                font-size: 16px;
+                height: 40px;
+                bottom: -40px;
+                background-color: white;
+                margin: 0 auto;
+                padding: 10px;
+                left: -15px
+            }
+
+            &:hover {
+                span.first {
+                    display: block;
+
+
+                }
+
+                span.second {
+                    display: block;
+
+
+                }
+
+                span.third {
+                    display: block;
+
+                }
+
+                span.text {
+                    display: block;
+                }
+            }
+
+            a.section-tri::after {
+                content: "";
+                /*空內容*/
+                display: inline-block;
+                width: 0px;
+                height: 0px;
+                /*調整寬高使用inline-block*/
+                border-top: 5px solid #F0A6A6;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                margin-left: 5px;
+            }
+
+
+        }
+
+        li {
+            margin-left: 30px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: #F0A6A6;
+                    transform: translateY(-5px);
+                }
+
+            }
+
+
+        }
+
+    }
+
+    div.burgur-section {
+        display: none;
+
+        img.burger {
+            width: 50px;
+            height: 50px;
+
+            align-self: center;
+        }
+    }
+
+}
+
+// header rwd
+@media (max-width:768px) {
+    header {
+        ul {
+
+            li {
+                margin-left: 20px;
+                font-size: 14px;
+            }
+
+            li.selection-outter {
+                span.first {
+                    font-size: 14px;
+                    height: 30px;
+                    bottom: -30px;
+                }
+
+                span.second {
+                    font-size: 14px;
+                    height: 30px;
+                    bottom: -60px;
+                }
+
+                span.third {
+                    font-size: 14px;
+                    height: 30px;
+                    bottom: -90px;
+                }
+
+                span.text {
+                    height: 30px;
+                    bottom: -30px;
+                    font-size: 14px;
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width:577px) {
+    .change {
+        display: flex !important;
+    }
+}
+
+@media (max-width:576px) {
+    header {
+        // flex-direction: column;
+        flex-wrap: wrap;
+        border-bottom: none;
+
+        div.logo {
+            // border: 1px solid red;
+            width: 30%;
+            padding: 0;
+
+            img.logo {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        ul {
+
+            order: 2;
+            display: none;
+            width: 100%;
+
+
+            li {
+                padding: 20px;
+                border-bottom: 2px solid #F0A6A6;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            li:last-child {
+                border-bottom: none;
+            }
+        }
+
+
+        div.burgur-section {
+            width: 60%;
+            display: flex;
+            // border: 1px solid black;
+            margin-right: 10px;
+
+            img.burger {
+                justify-self: end;
+                margin-left: auto;
+                order: 1;
+                align-self: center;
+
+            }
+        }
+
+    }
+}

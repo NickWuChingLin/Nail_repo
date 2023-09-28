@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Serif TC', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #F0A6A6;
+    box-shadow: 1px 1px 3px #F0A6A6;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+
+    div.logo {
+        margin-left: 5%;
+
+        img {
+            width: 100px;
+
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        margin-right: 5%;
+
+        li.selection-outter {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            // border: 1px solid red;
+            z-index: 10;
+
+            span.first {
+                width: 100%;
+                text-align: center;
+                display: none;
+                position: absolute;
+                font-size: 12px;
+                height: 30px;
+                bottom: -30px;
+                background-color: white;
+                margin: 0 auto;
+                padding: 10px 1px;
+            }
+
+            span.second {
+                width: 100%;
+                text-align: center;
+                display: none;
+                position: absolute;
+                font-size: 12px;
+                height: 30px;
+                bottom: -60px;
+                background-color: white;
+                margin: 0 auto;
+                padding: 10px 1px;
+            }
+
+            span.third {
+                width: 100%;
+                text-align: center;
+                display: none;
+                position: absolute;
+                font-size: 12px;
+                height: 30px;
+                bottom: -90px;
+                background-color: white;
+                margin: 0 auto;
+                padding: 10px 1px;
+            }
+
+            // 美甲師留言板
+            span.text {
+                width: 80px;
+                text-align: center;
+                display: none;
+                position: absolute;
+                font-size: 12px;
+                height: 30px;
+                bottom: -30px;
+                background-color: white;
+                margin: 0 auto;
+                padding: 10px;
+                left: -15px
+            }
+
+            &:hover {
+                span.first {
+                    display: block;
+
+
+                }
+
+                span.second {
+                    display: block;
+
+
+                }
+
+                span.third {
+                    display: block;
+
+                }
+
+                span.text {
+                    display: block;
+                }
+            }
+
+        }
+
+        li {
+            margin-left: 30px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: pink;
+                }
+
+            }
+        }
+
+    }
+}

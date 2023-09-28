@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div.banner {
+  background-color: #F0A6A6;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+div.banner div.banner-img {
+  width: 40%;
+  height: 80vh;
+  background-image: url("../img/banner/serve_banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+div.banner div.banner-img div.fliter {
+  background-color: black;
+  width: 100%;
+  height: 80vh;
+  opacity: 10%;
+}
+div.banner div.banner-content {
+  width: 60%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.banner div.banner-content h1 {
+  margin-bottom: 50px;
+}
+
+main {
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 50px;
+}
+main h1 {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 42px;
+}
+main div.price-card {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+main div.price-card div.price {
+  text-align: center;
+}
+main div.price-card div.price div.price-img {
+  margin: 0 auto;
+  width: 300px;
+}
+main div.price-card div.price div.price-img img {
+  border-radius: 50%;
+  width: 100%;
+  height: 300px;
+  transition: all 1s;
+  opacity: 80%;
+}
+main div.price-card div.price div.price-img img:hover {
+  src: url(../img/S__40198192.jpg);
+}
+main div.price-card div.price h3 {
+  font-size: 24px;
+}
+main div.price-card div.price p {
+  font-size: 16px;
+  color: #c7a9a1;
+  transition: all 0.5s;
+}
+main div.price-card div.price p:hover {
+  font-size: 20px;
+  transform: translateY(10%);
+}
+
+.serve {
+  background-color: #F0A6A6;
+  padding-bottom: 20px;
+}
+.serve h1.serve-content {
+  padding: 50px 0 0 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.serve .serveSection {
+  max-width: 800px;
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.serve .serveSection:nth-child(1n) .img img {
+  display: block;
+  margin: 0 auto;
+}
+.serve .serveSection:nth-child(2n) .img {
+  order: 1;
+}
+.serve .serveSection:nth-child(2n) .img img {
+  display: block;
+  margin: 0 auto;
+}
+.serve .serveSection .img {
+  width: 50%;
+}
+.serve .serveSection .img img {
+  right: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.serve .serveSection .text {
+  text-align: center;
+  color: white;
+  width: 50%;
+  border-bottom: 3px solid #bf3f4c;
+}
+.serve .serveSection .text h2.serve-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.serve .serveSection .text p.serve-primary {
+  line-height: 2;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+form.reserveForm {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #eae0d7;
+}
+form.reserveForm div.reserve {
+  padding: 20px 0;
+  border: 5px solid #F0A6A6;
+  border-radius: 0 50px 0 0;
+  background-color: rgb(240, 240, 240);
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+form.reserveForm div.reserve h1 {
+  text-align: center;
+}
+form.reserveForm div.reserve div.reserveInput {
+  margin: 20px 0;
+  width: 85%;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+}
+form.reserveForm div.reserve div.reserveInput label {
+  font-size: 24px;
+}
+form.reserveForm div.reserve div.reserveInput input.peopleInput {
+  width: 80px;
+}
+form.reserveForm div.reserve div.reserveInput input {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 18px;
+  height: 30px;
+  width: 150px;
+}
+form.reserveForm div.reserve div.reserveTime {
+  margin: 20px 0;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+}
+form.reserveForm div.reserve div.reserveTime button.reserve-btn {
+  border: 2px solid #F0A6A6;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  margin: 20px 0;
+  width: 120.5px;
+}
+form.reserveForm div.reserve div.reserveTime button.reserve-btn:hover {
+  background-color: #F0A6A6;
+}
+form.reserveForm div.reserve div.reserveTime .changetn {
+  background-color: #F0A6A6;
+}
+form.reserveForm div.reserve div.reserveTime button.submit-btn {
+  margin: 20px auto 0 auto;
+  padding: 5px 100px;
+  border: none;
+  background-color: #F0A6A6;
+  border-radius: 10px;
+  font-size: 24px;
+}/*# sourceMappingURL=serve.css.map */

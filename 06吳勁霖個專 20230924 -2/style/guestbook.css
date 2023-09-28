@@ -1,0 +1,202 @@
+@charset "UTF-8";
+div.banner {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+}
+div.banner img {
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+}
+div.banner div.textSection {
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 50px;
+}
+div.banner div.textSection h1 {
+  letter-spacing: 5px;
+}
+div.banner div.textSection p {
+  margin: 10px;
+  letter-spacing: 5px;
+}
+
+div.main-title h1 {
+  margin: 50px;
+  text-align: center;
+}
+div.main-title h1:hover {
+  color: #F0A6A6;
+}
+div.main-title span.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  border: 3px solid #F0A6A6;
+  border-radius: 50px;
+  margin: 20px auto;
+}
+div.main-title span.btn:hover {
+  background-color: #F0A6A6;
+  color: white;
+}
+
+div.card {
+  padding: 20px;
+  display: none;
+}
+
+div.cardSection {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+div.cardSection div.card-body {
+  border: 5px solid #F0A6A6;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+div.cardSection div.card-body div.card-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+div.cardSection div.card-body div.card-content {
+  text-align: center;
+}
+div.cardSection div.card-body div.card-content p {
+  text-align: start;
+  margin: 10px 0;
+  line-height: 2;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+div.cardSection div.card-body div.card-img.first {
+  background-image: url(../img/留言區/吳小姐.jpg);
+}
+div.cardSection div.card-body div.card-img.second {
+  background-image: url(../img/留言區/李小姐.jpg);
+}
+div.cardSection div.card-body div.card-img.third {
+  background-image: url(../img/留言區/王小姐.jpg);
+}
+div.cardSection div.card-body div.card-img.fourth {
+  background-image: url(../img/留言區/陳小姐.jpg);
+}
+div.cardSection div.card-body div.card-img.five {
+  background-image: url(../img/留言區/曲小姐.jpg);
+}
+div.cardSection div.card-body div.card-img.six {
+  background-image: url(../img/留言區/莊小姐.jpg);
+}
+div.cardSection div.card-body div.card-img.seven {
+  background-image: url(../img/留言區/張小姐.jpg);
+}
+div.cardSection div.card-body div.card-img.eight {
+  background-image: url(../img/留言區/呂小姐.jpg);
+}
+
+main {
+  background-color: #F0A6A6;
+  padding: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main div.file-img {
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  margin: 30px 0;
+  overflow: hidden;
+}
+main div.file-img div.file-plus {
+  background-color: white;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 150px;
+  line-height: 300px;
+}
+main div.file-img div.fake-img {
+  position: relative;
+}
+main div.file-img div.fake-img input.imgFile {
+  cursor: pointer;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  font-size: 100px;
+  top: 0;
+  opacity: 0;
+}
+main div.file-img div.fake-img img {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+main h1 {
+  text-align: center;
+  color: rgb(247, 244, 244);
+  margin: 20px;
+  margin-bottom: 50px;
+}
+main div.dream {
+  margin: 10px auto;
+  width: 70%;
+  border: 3px solid #F0A6A6;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px 0 20px 0;
+  padding: 20px;
+  background-color: white;
+}
+main div.dream label {
+  margin: 10px;
+}
+main div.dream input {
+  margin: 10px;
+  height: 50px;
+  font-size: 24px;
+}
+main div.dream textarea {
+  margin: 20px 10px;
+  font-size: 24px;
+}
+main div.submitSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+main div.submitSection p {
+  font-size: 24px;
+  cursor: pointer;
+}
+main div.submitSection button {
+  border: none;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #F0A6A6;
+  border-radius: 20px;
+}
+main div.submitSection button:hover {
+  background-color: #F0A6A6;
+  color: white;
+}/*# sourceMappingURL=guestbook.css.map */

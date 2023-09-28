@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Noto Serif TC", serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #F0A6A6;
+  box-shadow: 1px 1px 3px #F0A6A6;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+}
+header div.logo {
+  margin-left: 5%;
+}
+header div.logo img {
+  width: 100px;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-right: 5%;
+}
+header ul li.selection-outter {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+header ul li.selection-outter span.first {
+  width: 100%;
+  text-align: center;
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  height: 30px;
+  bottom: -30px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px 1px;
+}
+header ul li.selection-outter span.second {
+  width: 100%;
+  text-align: center;
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  height: 30px;
+  bottom: -60px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px 1px;
+}
+header ul li.selection-outter span.third {
+  width: 100%;
+  text-align: center;
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  height: 30px;
+  bottom: -90px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px 1px;
+}
+header ul li.selection-outter span.text {
+  width: 80px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  height: 30px;
+  bottom: -30px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px;
+  left: -15px;
+}
+header ul li.selection-outter:hover span.first {
+  display: block;
+}
+header ul li.selection-outter:hover span.second {
+  display: block;
+}
+header ul li.selection-outter:hover span.third {
+  display: block;
+}
+header ul li.selection-outter:hover span.text {
+  display: block;
+}
+header ul li {
+  margin-left: 30px;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+}
+header ul li a:hover {
+  color: pink;
+}/*# sourceMappingURL=header.css.map */
