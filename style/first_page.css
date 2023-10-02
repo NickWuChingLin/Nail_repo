@@ -69,6 +69,32 @@ main div.inner-banner div.carousel button {
   transition: all 0.5s;
   font-size: 50px;
 }
+main div.ineer-banner1 {
+  background-image: url("../img/ali-nurmemmedov-HGRi0H-VvfI-unsplash.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: all 0.5s;
+  margin: auto;
+  display: flex;
+}
+main div.ineer-banner2 {
+  background-image: url("../img/tiko-giorgadze-_RhLAHDzy1I-unsplash.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 0;
+  background-size: cover;
+  background-blend-mode: multiply;
+  transition: all 0.5s;
+  margin: auto;
+  display: flex;
+}
 @media (max-width: 768.98px) {
   main div.inner-banner {
     display: flex;

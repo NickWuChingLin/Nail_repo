@@ -107,9 +107,39 @@ main {
                 //     background-color: #F0A6A6;
                 // }
             }
-
-
         }
+    }
+
+    div.ineer-banner1 {
+        background-image: url("../img/ali-nurmemmedov-HGRi0H-VvfI-unsplash.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        background-color: rgba(0, 0, 0, 40%);
+        padding: 10px 0;
+        // height: 400px;
+        background-size: cover;
+        // 設定背景色與背景混合
+        background-blend-mode: multiply;
+        transition: all 0.5s;
+        margin: auto;
+        display: flex;
+    }
+
+    div.ineer-banner2 {
+        background-image: url("../img/tiko-giorgadze-_RhLAHDzy1I-unsplash.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        background-color: rgba(0, 0, 0, 40%);
+        padding: 10px 0;
+        // height: 400px;
+        background-size: cover;
+        // 設定背景色與背景混合
+        background-blend-mode: multiply;
+        transition: all 0.5s;
+        margin: auto;
+        display: flex;
     }
 
 

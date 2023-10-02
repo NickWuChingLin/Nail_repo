@@ -93,42 +93,22 @@ header {
                 z-index: 2;
             }
 
-            // 美甲師留言板
-            span.text {
-                width: 100px;
-                text-align: center;
-                display: none;
-                position: absolute;
-                font-size: 16px;
-                height: 40px;
-                bottom: -40px;
-                background-color: white;
-                margin: 0 auto;
-                padding: 10px;
-                left: -15px
-            }
+
 
             &:hover {
                 span.first {
                     display: block;
-
-
                 }
 
                 span.second {
                     display: block;
-
-
                 }
 
                 span.third {
                     display: block;
-
                 }
 
-                span.text {
-                    display: block;
-                }
+
             }
 
             a.section-tri::after {
@@ -147,6 +127,65 @@ header {
 
         }
 
+        li.selection-outter1 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            // 美甲師留言板
+            span.text {
+                width: 100px;
+                text-align: center;
+                display: none;
+                position: absolute;
+                font-size: 16px;
+                height: 40px;
+                bottom: -40px;
+                background-color: white;
+                margin: 0 auto;
+                padding: 10px;
+                left: -15px
+            }
+
+            span.text1 {
+                width: 100px;
+                text-align: center;
+                display: none;
+                position: absolute;
+                font-size: 16px;
+                height: 40px;
+                bottom: -80px;
+                background-color: white;
+                margin: 0 auto;
+                padding: 10px;
+                left: -15px
+            }
+
+            a.section-tri::after {
+                content: "";
+                /*空內容*/
+                display: inline-block;
+                width: 0px;
+                height: 0px;
+                /*調整寬高使用inline-block*/
+                border-top: 5px solid #F0A6A6;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                margin-left: 5px;
+            }
+
+
+            &:hover {
+                span.text {
+                    display: block;
+                }
+
+                span.text1 {
+                    display: block;
+                }
+            }
+        }
+
         li {
             margin-left: 30px;
 
@@ -162,8 +201,8 @@ header {
 
             }
 
-
         }
+
 
     }
 
@@ -209,12 +248,22 @@ header {
                     bottom: -90px;
                 }
 
+
+
+            }
+
+            li.selection-outter1 {
                 span.text {
                     height: 30px;
                     bottom: -30px;
                     font-size: 14px;
                 }
 
+                span.text1 {
+                    height: 30px;
+                    bottom: -60px;
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -225,6 +274,8 @@ header {
         display: flex !important;
     }
 }
+
+
 
 @media (max-width:576px) {
     header {
@@ -260,6 +311,75 @@ header {
             li:last-child {
                 border-bottom: none;
             }
+
+            li.selection-outter {
+                span.first {
+                    font-size: 16px;
+                    display: block;
+                    position: static;
+                    display: none;
+                }
+
+                span.second {
+                    font-size: 16px;
+                    display: block;
+                    position: static;
+                    display: none;
+                }
+
+                span.third {
+                    font-size: 16px;
+                    display: block;
+                    position: static;
+                    display: none;
+                }
+
+                &:hover {
+                    span.first {
+                        display: none;
+                    }
+
+                    span.second {
+                        display: none;
+                    }
+
+                    span.third {
+                        display: none;
+                    }
+
+
+                }
+
+            }
+
+            li.selection-outter1 {
+                span.text {
+
+                    font-size: 16px;
+                    display: block;
+                    position: static;
+                    display: none;
+                }
+
+                span.text1 {
+                    font-size: 16px;
+                    display: block;
+                    position: static;
+                    display: none;
+                }
+
+                &:hover {
+                    span.text {
+                        display: none;
+                    }
+
+                    span.text1 {
+                        display: none;
+                    }
+
+                }
+            }
+
         }
 
 

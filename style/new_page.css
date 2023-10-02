@@ -6,14 +6,13 @@
 
 div.banner {
   width: 100%;
-  height: 80vh;
+  height: 500px;
   display: flex;
   border-bottom: 3px solid #F0A6A6;
 }
 div.banner div.banner-img {
-  width: 40%;
-  height: 80vh;
-  background-image: url("../img/new_img/new scoll0.jpg");
+  width: 70%;
+  background-image: url("../img/new_img/daiga-ellaby--5KjF_u5YzI-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -21,11 +20,11 @@ div.banner div.banner-img {
 div.banner div.banner-img div.fliter {
   background-color: black;
   width: 100%;
-  height: 80vh;
+  height: 500px;
   opacity: 10%;
 }
 div.banner div.banner-content {
-  width: 60%;
+  width: 30%;
   color: black;
   display: flex;
   flex-direction: column;
@@ -37,25 +36,35 @@ div.banner div.banner-content h1 {
 }
 
 main {
-  padding: 50px 0;
+  padding: 50px;
   display: grid;
-  grid-template-columns: 280px auto;
+  grid-template-columns: 25% 75%;
   justify-content: center;
   gap: 20px;
-  min-width: 1200px;
+  max-width: 100%;
   padding-bottom: 20px;
   background-color: rgb(240, 240, 240);
 }
+main div.startIcon {
+  position: relative;
+  display: none;
+}
+main div.startIcon img {
+  width: 50px;
+  height: 50px;
+}
+main div.startIcon img.start {
+  position: absolute;
+}
 main section.left {
-  border: 1px solid #eae0d7;
-  background-color: #eae0d7;
+  background-color: #F0A6A6;
   border-radius: 5px;
   height: 280px;
 }
 main section.left h1 {
   text-align: center;
   margin: 10px 0;
-  border-bottom: 2px solid #c7a9a1;
+  border-bottom: 2px solid white;
 }
 main section.left h2 {
   font-size: 20px;
@@ -71,7 +80,7 @@ main section.left ul {
 }
 main section.left ul li a {
   text-decoration: none;
-  color: #c7a9a1;
+  color: white;
 }
 main section.left ul li a:hover {
   background-color: #c7a9a1;
@@ -87,10 +96,11 @@ main section.right {
   grid-template-columns: auto auto auto;
   gap: 45px;
   justify-content: center;
+  padding: 10px;
 }
 main div.card {
   overflow: hidden;
-  width: 250px;
+  min-width: 30%;
   border-radius: 10px;
   padding: 20px;
   height: 450px;
@@ -115,7 +125,7 @@ main div.card div.card-body span.new {
   display: flex;
   flex-direction: column;
   border: 3px solid #F0A6A6;
-  width: 30%;
+  width: 40%;
   border-radius: 10px;
   text-align: center;
   padding: 5px;
@@ -181,5 +191,106 @@ main div.card div.card-body div.redheart {
   100% {
     width: 30px;
     height: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  main section.right div.card {
+    height: 500px;
+    padding: 10px 0;
+  }
+  main section.right div.card div.card-body div.heart-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main section.right div.card div.card-body div.heart-section p {
+    margin: 10px 0;
+    margin-left: auto;
+  }
+  main section.right div.card div.card-body a.chat-btn {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 992px) {
+  div.banner div.banner-img {
+    width: 60%;
+  }
+  div.banner div.banner-content {
+    width: 40%;
+  }
+  div.banner div.banner-content h1 {
+    font-size: 24px;
+  }
+  div.banner div.banner-content h2 {
+    font-size: 18px;
+  }
+  main section.right {
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  div.banner {
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    height: 400px;
+  }
+  div.banner div.banner-img {
+    width: 100%;
+    order: 1;
+    height: 400px;
+  }
+  div.banner div.banner-img div.fliter {
+    height: 400px;
+  }
+  div.banner div.banner-content {
+    order: 2;
+    position: absolute;
+    bottom: -30px;
+    background-color: white;
+    padding: 10px;
+    width: 50%;
+  }
+  div.banner div.banner-content h1 {
+    margin-bottom: 30px;
+  }
+  main {
+    grid-template-columns: auto;
+  }
+  main div.startIcon {
+    display: block;
+    cursor: pointer;
+  }
+  main section.left {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  div.banner div.banner-content h1 {
+    font-size: 18px;
+  }
+  div.banner div.banner-content h2 {
+    font-size: 16px;
+  }
+  main {
+    width: 100%;
+  }
+  main div.startIcon {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    margin-right: 300px;
+  }
+  main section.right {
+    border: none;
+    grid-template-columns: auto;
+    gap: 50px;
+  }
+  main section.right div.card {
+    border-bottom: 5px dashed #F0A6A6;
+  }
+  main section.right div.card:last-child {
+    border-bottom: none;
   }
 }/*# sourceMappingURL=new_page.css.map */

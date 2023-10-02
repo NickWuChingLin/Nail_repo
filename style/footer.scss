@@ -72,3 +72,27 @@ footer {
         }
     }
 }
+
+@media (max-width:992px) {
+    footer {
+        section.left {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    footer {
+        section.left {
+            img {
+                width: 80px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
