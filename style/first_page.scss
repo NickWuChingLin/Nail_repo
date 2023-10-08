@@ -184,9 +184,13 @@ main {
                     margin: 0 auto;
 
                     button {
-                        font-size: 30px;
                         margin-top: auto;
+                        margin: 0 auto;
+                        background-color: black;
+                    }
 
+                    .changeCol {
+                        color: #F0A6A6;
                     }
                 }
             }
@@ -231,21 +235,31 @@ main {
             display: grid;
             grid-template-columns: auto auto auto auto;
             margin: 0 auto;
-            padding: 5px;
+
+            width: 500px;
+
+            overflow: hidden;
+
 
             div.card {
                 // border: 1px solid red;
 
                 text-align: center;
+                width: 500px;
+                position: relative;
+
 
                 div.card-body {
-                    width: 300px;
+                    width: 100%;
                     padding: 80px 10px;
+                    object-fit: cover;
+
+
 
                     div.card-bodyImg {
 
                         width: 100%;
-                        height: 200px;
+                        height: 400px;
                         margin: 0 auto;
                         background-position: center center;
                         background-repeat: no-repeat;
@@ -256,9 +270,13 @@ main {
 
                     p {
                         margin-top: 10px;
-                        font-size: 12px;
-                        color: #F0A6A6;
-                        line-height: 2;
+                        font-size: 16px;
+
+                        line-height: 3;
+                    }
+
+                    h3 {
+                        font-size: 24px;
                     }
 
                     div.card-bodyImg.img1 {
@@ -278,22 +296,46 @@ main {
                     }
                 }
             }
+
+            ul.slider {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            ul.slider li {
+                width: 30px;
+                height: 30px;
+                background-color: #F0A6A6;
+                border-radius: 50%;
+                margin: 20px;
+
+            }
+
+            ul.slider li.clicked {
+                background-color: #999;
+            }
         }
     }
 
     // 設計卡片的rwd
     @media (max-width:768.98px) {
         div.intro {
-            max-width: 100%;
+
             overflow: hidden;
 
             div.introcard {
-                display: block;
                 margin: 0 auto;
+                width: 300px;
 
                 div.card {
+                    width: 300px;
+
                     div.card-body {
-                        display: block;
+                        div.card-bodyImg {
+                            height: 300px;
+                        }
                     }
                 }
             }
@@ -364,27 +406,27 @@ main {
             }
 
             div.imgsection.img1 {
-                background-image: url("../img/首頁卡片區域/30\ Cute\ Spring\ Nail\ Design\ Trends\ And\ Ideas\ That\ You\ Need\ 2023\ \ _\ Beach\ Nails\ Art.jpg");
+                background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/首頁卡片區域/30\ Cute\ Spring\ Nail\ Design\ Trends\ And\ Ideas\ That\ You\ Need\ 2023\ \ _\ Beach\ Nails\ Art.jpg");
             }
 
             div.imgsection.img2 {
-                background-image: url("../img/首頁卡片區域/35+\ Summer\ Acrylic\ Nail\ Ideas\ -\ the\ gray\ details.jpg");
+                background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/首頁卡片區域/35+\ Summer\ Acrylic\ Nail\ Ideas\ -\ the\ gray\ details.jpg");
             }
 
             div.imgsection.img3 {
-                background-image: url("../img/首頁卡片區域/50\ Gorgeous\ Fall\ Nails\ That\'re\ Perfect\ For\ Thanksgiving\ _\ White\ Nails\ with\ Brown\ Accents.jpg");
+                background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/首頁卡片區域/50\ Gorgeous\ Fall\ Nails\ That\'re\ Perfect\ For\ Thanksgiving\ _\ White\ Nails\ with\ Brown\ Accents.jpg");
             }
 
             div.imgsection.img4 {
-                background-image: url("../img/首頁卡片區域/bryony-elena-tXwBDZS2JxQ-unsplash.jpg");
+                background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/首頁卡片區域/bryony-elena-tXwBDZS2JxQ-unsplash.jpg");
             }
 
             div.imgsection.img5 {
-                background-image: url("../img/首頁卡片區域/Pink\ Jelly\ Charm\ Nails\,\ Sparkly\ nails\,.png");
+                background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/首頁卡片區域/braconer-SeKJtqQvoNM-unsplash.jpg");
             }
 
             div.imgsection.img6 {
-                background-image: url("../img/首頁卡片區域/Short\ nail\ designs\ for\ any\ occasions.jpg");
+                background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/首頁卡片區域/vadim-mityushin-PnRln1Fi97A-unsplash.jpg");
             }
 
         }

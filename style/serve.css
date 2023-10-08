@@ -13,6 +13,7 @@ div.banner {
 div.banner div.banner-img {
   width: 70%;
   background-image: url("../img/serve_img/marina-ermakova-hLX_A9wjDWA-unsplash.jpg");
+  background-image: url("../img/serve_img/biel-morro-WW08JFg8SuI-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -288,6 +289,33 @@ form.reserveForm div.reserve div.reserveTime button.submit-btn {
   div.serve div.serveSection section.text p.serve-primary {
     font-size: 18px;
   }
+  form.reserveForm div.reserve {
+    width: 80%;
+    height: 650px;
+  }
+  form.reserveForm div.reserve div.reserveInput {
+    display: flex;
+    flex-direction: column;
+  }
+  form.reserveForm div.reserve div.reserveInput input {
+    margin: 10px auto;
+  }
+  form.reserveForm div.reserveTime div.afternon {
+    margin: 0 auto;
+    text-align: center;
+  }
+  form.reserveForm div.reserveTime div.afternon button.reserve-btn {
+    width: 80px;
+    margin-left: 10px;
+  }
+  form.reserveForm div.reserveTime div.night {
+    margin: 0 auto;
+    text-align: center;
+  }
+  form.reserveForm div.reserveTime div.night button.reserve-btn {
+    width: 80px;
+    margin-left: 10px;
+  }
 }
 @media (max-width: 576px) {
   div.banner div.banner-content {
@@ -357,7 +385,6 @@ form.reserveForm div.reserve div.reserveTime button.submit-btn {
   }
   form.reserveForm div.reserve div.reserveTime div.night {
     width: 100%;
-    border: 1px solid black;
   }
   form.reserveForm div.reserve div.reserveTime div.night h2 {
     text-align: center;
@@ -366,5 +393,10 @@ form.reserveForm div.reserve div.reserveTime button.submit-btn {
     margin: 20px auto;
     max-width: 80px;
     font-size: 16px;
+  }
+  form.reserveForm div.reserve div.reserveTime button.submit-btn {
+    width: 60%;
+    font-size: 16px;
+    padding: 5px 0;
   }
 }/*# sourceMappingURL=serve.css.map */

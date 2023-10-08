@@ -8,13 +8,13 @@ const fourthImg = document.querySelector(".fourthImg")
 setInterval(() => {
     let bannerImg = document.querySelector("div.banner-img")
 
-    if (bannerImg.style.backgroundImage == 'url("img/serve_img/marina-ermakova-hLX_A9wjDWA-unsplash.jpg"")') {
-        bannerImg.style.backgroundImage = 'url("img/banner/預約制度.jpg")'
-    } else if (bannerImg.style.backgroundImage == 'url("img/banner/預約制度.jpg")') {
-        bannerImg.style.backgroundImage = 'url("img/banner/預約時間超多元.jpg")'
+    if (bannerImg.style.backgroundImage == 'url("img/serve_img/biel-morro-WW08JFg8SuI-unsplash.jpg")') {
+        bannerImg.style.backgroundImage = 'url("/img/serve_img/lena-taranenko-H18L6UqkzYk-unsplash.jpg")'
+    } else if (bannerImg.style.backgroundImage == 'url("/img/serve_img/lena-taranenko-H18L6UqkzYk-unsplash.jpg")') {
+        bannerImg.style.backgroundImage = 'url("img/serve_img/marina-ermakova-hLX_A9wjDWA-unsplash.jpg")'
     }
     else {
-        bannerImg.style.backgroundImage = 'url("img/serve_img/marina-ermakova-hLX_A9wjDWA-unsplash.jpg"")'
+        bannerImg.style.backgroundImage = 'url("img/serve_img/biel-morro-WW08JFg8SuI-unsplash.jpg")'
     }
 
     console.log(bannerImg)

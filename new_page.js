@@ -1,12 +1,12 @@
 
 $(document).ready(function () {
-    // $("h1:nth-child(1)").t({
-    //     speed: 400,
-    // })
-    // $("h2").t({
-    //     delay: 4,
-    //     speed: 500
-    // })
+    $("h1:nth-child(1)").t({
+        speed: 400,
+    })
+    $("h2").t({
+        delay: 4,
+        speed: 500
+    })
 
     // 當window在寬度768時才會觸發
     let windowWidth = $(window).width()
@@ -30,21 +30,25 @@ $(document).ready(function () {
         $(".startIcon").off("click")
     }
 
+  
+
 });
 const heart = document.querySelectorAll(".heart")
 let heartSection = document.querySelectorAll(".heart-section")
-
 setInterval(() => {
+        
     let bannerImg = document.querySelector("div.banner-img")
-    if (bannerImg.style.backgroundImage == 'url("img/new_img/daiga-ellaby--5KjF_u5YzI-unsplash.jpg")') {
-        bannerImg.style.backgroundImage = 'url("img/new_img/new\ scoll1.jpg")'
-    } else if (bannerImg.style.backgroundImage == 'url("img/new_img/new\ scoll1.jpg")') {
-        bannerImg.style.backgroundImage = 'url("img/new_img/new\ scoll2.jpg")'
+    if (bannerImg.style.backgroundImage == 'url("img/serve_img/biel-morro-WW08JFg8SuI-unsplash.jpg")') {
+        bannerImg.style.backgroundImage = 'url("img/new_img/corryne-wooten-PQB2mw7V964-unsplash.jpg")'
+    } else if (bannerImg.style.backgroundImage == 'url("img/new_img/corryne-wooten-PQB2mw7V964-unsplash.jpg")') {
+        bannerImg.style.backgroundImage = 'url("img/new_img/andriyko-podilnyk-FANSww7PlEU-unsplash.jpg")'
     } else {
-        bannerImg.style.backgroundImage = 'url("img/new_img/daiga-ellaby--5KjF_u5YzI-unsplash.jpg")'
+        bannerImg.style.backgroundImage = 'url("img/serve_img/biel-morro-WW08JFg8SuI-unsplash.jpg")'
     }
 
-}, 3000)
+}, 5000)
+
+
 
 
 // 設定點愛心數字會增加

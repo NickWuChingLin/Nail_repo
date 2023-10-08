@@ -1,7 +1,7 @@
 @charset "UTF-8";
 div.banner {
   width: 100%;
-  height: 80vh;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +21,7 @@ div.banner div.textSection {
 }
 div.banner div.textSection h1 {
   letter-spacing: 5px;
+  font-size: 50px;
 }
 div.banner div.textSection p {
   margin: 10px;
@@ -43,6 +44,7 @@ div.main-title span.btn {
   border: 3px solid #F0A6A6;
   border-radius: 50px;
   margin: 20px auto;
+  cursor: pointer;
 }
 div.main-title span.btn:hover {
   background-color: #F0A6A6;
@@ -198,4 +200,52 @@ main div.submitSection button {
 main div.submitSection button:hover {
   background-color: #F0A6A6;
   color: white;
+}
+
+@media (max-width: 1200px) {
+  div.cardSection {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media (max-width: 992px) {
+  div.cardSection {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 768px) {
+  main h1 {
+    font-size: 28px;
+  }
+  main div.dream {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  div.banner div.textSection h1.banner-title {
+    font-size: 38px;
+  }
+  div.banner div.textSection p {
+    font-size: 14px;
+  }
+  div.cardSection {
+    display: block;
+  }
+  main h1 {
+    font-size: 24px;
+  }
+  main div.file-img {
+    margin: 0;
+  }
+  main div.file-img div.file-plus {
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    margin-bottom: 0;
+  }
+  main div.dream textarea {
+    font-size: 20px;
+  }
+  main div.dream div.submitSection p {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=guestbook.css.map */

@@ -14,8 +14,8 @@ div.banner {
 
     div.banner-img {
         width: 70%;
-
         background-image: url("../img/serve_img/marina-ermakova-hLX_A9wjDWA-unsplash.jpg");
+        background-image: url("../img/serve_img/biel-morro-WW08JFg8SuI-unsplash.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -197,7 +197,9 @@ main {
             }
         }
     }
+
 }
+
 
 // reserve區域 
 form.reserveForm {
@@ -442,6 +444,44 @@ form.reserveForm {
             }
         }
     }
+
+    form.reserveForm {
+        div.reserve {
+            width: 80%;
+            height: 650px;
+
+            div.reserveInput {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    margin: 10px auto;
+                }
+            }
+        }
+
+        div.reserveTime {
+            div.afternon {
+                margin: 0 auto;
+                text-align: center;
+
+                button.reserve-btn {
+                    width: 80px;
+                    margin-left: 10px;
+                }
+            }
+
+            div.night {
+                margin: 0 auto;
+                text-align: center;
+
+                button.reserve-btn {
+                    width: 80px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:576px) {
@@ -546,7 +586,7 @@ form.reserveForm {
 
                 div.night {
                     width: 100%;
-                    border: 1px solid black;
+
 
 
                     h2 {
@@ -559,6 +599,12 @@ form.reserveForm {
                         font-size: 16px;
 
                     }
+                }
+
+                button.submit-btn {
+                    width: 60%;
+                    font-size: 16px;
+                    padding: 5px 0;
                 }
 
             }

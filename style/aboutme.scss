@@ -9,6 +9,7 @@ div.banner {
     // background-color: #F0A6A6;
 
     text-align: center;
+    // border-bottom: 5px solid #F0A6A6;
 
     img {
         margin: 20px auto;
@@ -38,129 +39,425 @@ div.banner {
 
 // ===優惠資訊卡片區域===
 main {
-    background-color: rgb(240, 240, 240);
-    padding: 50px;
+    width: 100%;
 
-    div.cardSection {
+    div.banner {
+        background-image: url("../img/aboutme/chelson-tamares-CdnZrvMUsBE-unsplash.jpg");
+        width: 100%;
+        height: 450px;
 
-        display: grid;
-        grid-template-columns: auto auto auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 100px;
 
-        div.cardItem {
-            border-radius: 20px;
-            width: 350px;
-            height: 300px;
-            margin: 0 auto;
-            border: 5px solid #F0A6A6;
-            // background-color: #c7a9a1;
+        h1 {
+
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    // 服務區域 
+    div.serve {
+
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        height: 200px;
+
+        section.left {
+            width: 20%;
+            background-color: black;
+            opacity: 0.6;
+            border-bottom-left-radius: 50%;
             display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 20px;
+            justify-content: center;
+
+            h1 {
+                font-size: 24px;
+                color: white;
+
+            }
+        }
+
+        section.right {
+            display: flex;
+            width: 50%;
             align-items: center;
 
-            img {
+            div.card {
+                text-align: center;
+                margin-right: 30px;
 
-                width: 100px;
-                height: 100px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin: 10px;
+                }
+
+                h1 {
+                    margin: 10px;
+
+                    font-size: 24px;
+                }
+
+                p {
+                    margin: 20px;
+
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    // 價目表
+    div.price {
+        width: 100%;
+        height: 500px;
+        background-image: url("../img/aboutme/evie-s-_IpKsTK9gcE-unsplash.jpg");
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+
+        align-items: center;
+
+
+        div.price-card {
+            height: 400px;
+            background-color: black;
+            opacity: 0.7;
+            color: white;
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h1 {
+                text-align: center;
+                font-size: 32px;
+            }
+
+            h2 {
+
+                text-align: center;
+            }
+
+            ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: auto auto;
+                text-align: center;
+                font-size: 20px;
+            }
+        }
+    }
+
+    // 圖片區域
+    div.card-img {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+
+        div.card-body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            margin-top: 50px;
+
+            &:nth-child(2n) {
+                div.up {
+                    order: 2;
+                    transition: all 0.5s;
+                }
+
+                div.down {
+                    order: 1;
+                    height: 100px;
+                }
+
+                div.up:hover {
+                    transform: translateY(30px);
+                }
+            }
+
+            &:last-child {
+                div.down {
+                    height: 150px;
+                }
+            }
+        }
+
+        div.up {
+            transition: all 0.5s;
+
+        }
+
+        div.up:hover {
+            transform: translateY(-30px);
+        }
+
+        div.down {
+            width: 200px;
+            height: 300px;
+
+        }
+
+        div.up.first {
+            width: 200px;
+            height: 400px;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/aboutme/laura-chouette-ChYM19VFA1s-unsplash.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-bottom-left-radius: 50%;
+
+            position: relative;
+        }
+
+
+
+        div.up.second {
+            width: 200px;
+            height: 400px;
+            background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/aboutme/laura-chouette-OEqCPOo4jYw-unsplash.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+
+
+
+        div.up.third {
+            width: 200px;
+            height: 400px;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/aboutme/mia-moessinger-SN61sdC4e4E-unsplash.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+
+
+        div.up.fourth {
+            width: 200px;
+            height: 400px;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../img/aboutme/laura-chouette-_uWvakAlmPA-unsplash.jpg");
+            ;
+            border-bottom-right-radius: 50%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    }
+
+    //  聯絡交通資訊 
+    div.aboutMe {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+
+        div.contact-card {
+            position: relative;
+        }
+
+        div.contact-img {
+            width: 300px;
+            height: 300px;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div.contact-img.first {
+            background-image: url("../img/aboutme/janosch-diggelmann-7UcthRK_ivg-unsplash.jpg");
+        }
+
+        div.contact-img.second {
+            background-image: url("../img/aboutme/konstantin-shmatov-_dJDyjAOaZs-unsplash.jpg");
+        }
+
+        div.contact-img.third {
+            background-image: url("../img/aboutme/konstantin-shmatov-dKkIFATTxb8-unsplash.jpg");
+        }
+
+        div.contact-section {
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px 0;
+            opacity: 0.6;
+            position: absolute;
+            bottom: -100px;
+            right: -20px;
+
+            ul {
+                font-size: 20px;
+                list-style: none;
+            }
+
+            p {
+                font-size: 20px;
             }
         }
     }
 }
 
-// ===地址聯絡方式卡片區域===
-div.aboutme-card {
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 100%;
+// rwd區域
+@media (max-width:992px) {
+    main {
 
-    div.aboutme-card-body {
-        border: 5px solid #F0A6A6;
-        display: flex;
-        font-size: 0;
-        width: 80%;
-        margin: 20px auto;
-        border-radius: 20px;
-        overflow: hidden;
-
-
-        &:nth-child(2n) {
-            div.aboutme-card-body-img {
-                order: 1;
-            }
-        }
-
-        div.aboutme-card-body-img {
-
-            width: 30%;
-            position: relative;
-
-
-            div.fliter {
-
-                width: 100%;
-                height: 300px;
-                background-color: black;
-                position: absolute;
-                opacity: 40%;
-            }
-
-            img {
-
-                width: 100%;
-
-            }
-        }
-
-        div.aboutme-card-body-content {
-            // border: 1px solid red;
-            font-size: 16px;
-            width: 70%;
-            margin: auto 0;
+        //  服務區域
+        div.serve {
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
             display: flex;
             flex-direction: column;
-            padding: 10px;
+            align-items: center;
+            background-color: white;
+            justify-content: center;
 
-            div.contactme {
-                display: flex;
-                margin: 0 auto;
 
-                img {
-                    width: 30px;
-                    height: 30px;
+            section.left {
 
-                    // border: 1px solid orange;
+                width: 80%;
+                border-bottom-left-radius: 0;
+                margin-bottom: 30px;
+            }
+
+            section.right {
+                width: 100%;
+
+                justify-content: center;
+            }
+        }
+
+        // 圖片區域
+        div.card-img {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            div.card-body {
+                &:first-child {
+                    div.down {
+
+                        height: 100px;
+                    }
                 }
+            }
+
+
+        }
+
+        // 聯絡交通資訊
+        div.aboutMe {
+            div.contact-img {
+                width: 200px;
+                height: 250px;
+            }
+
+            div.contact-section {
+                width: 200px;
+                right: -10px;
 
                 p {
+                    font-size: 16px;
+                }
 
-                    // border: 1px solid black;
-                    vertical-align: middle;
+                ul {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    main {
+        div.banner {
+            h1 {
+                font-size: 36px;
+            }
+        }
+
+        div.aboutMe {
+            display: flex;
+            flex-wrap: wrap;
+
+            &:first-child {
+                div.contact-card {
+                    border: 1px solid green;
+                }
+            }
+
+            div.contact-card {
+                margin-bottom: 80px;
+            }
+
+            div.contact-section {
+
+                top: 100px;
+            }
+        }
+
+        div.about:first-child {
+            div.contact-card {
+                border: 20px solid red;
+            }
+        }
+    }
+
+}
+
+@media (max-width:576px) {
+    main {
+        div.serve {
+            section.right {
+                div.card {
+                    h1 {
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
                 }
 
             }
+        }
 
-
-            // div.contactme.second {
-            //     margin: 0 auto;
-            // }
-
-            // div.contactme.third {
-            //     margin-left: auto;
-            // }
-
-            h1 {
-                border-bottom: 2px solid #F0A6A6;
-                margin: 20px;
-                text-align: center;
-                height: 50px;
-            }
-
-
-            p {
-                margin: 10px;
-                font-size: 12px;
-                letter-spacing: 3px;
-                text-align: center;
+        div.price {
+            div.price-card {
+                width: 80%;
             }
         }
     }

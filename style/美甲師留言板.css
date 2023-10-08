@@ -1,65 +1,97 @@
-div.banner {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: rgb(240, 240, 240);
-}
-div.banner img {
-  margin: 20px auto;
-  width: 200px;
-  height: 200px;
-}
-div.banner div.textSection {
-  font-weight: bolder;
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 0 50px;
-}
-div.banner div.textSection h1 {
-  letter-spacing: 5px;
-}
-div.banner div.textSection p {
-  margin: 10px;
-  letter-spacing: 5px;
-}
-
-section.upload {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px;
-}
-section.upload img {
-  width: 50px;
-  height: 50px;
-  align-self: center;
-}
-section.upload div.upload-card {
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 20px;
-  border: 5px solid #F0A6A6;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  max-width: 1000px;
-  max-height: 1000px;
-}
-section.upload div.upload-card div.upload-img img {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-}
-
+@charset "UTF-8";
 main {
   padding: 20px;
 }
+main div.banner {
+  background-image: url("../img/美甲師/laura-chouette-Vze5s6SCrI8-unsplash.jpg");
+  width: 100%;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main div.banner h1 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+main div.banner h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
 main h1 {
   text-align: center;
+}
+main div.upload {
+  margin-bottom: 100px;
+  display: block;
+}
+main div.upload div.upload-cardBody {
+  display: flex;
+}
+main div.upload div.upload-cardBody:nth-child(2n) section.left {
+  order: 2;
+  position: relative;
+}
+main div.upload div.upload-cardBody:nth-child(2n) section.left div.text {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  top: 50px;
+  left: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main div.upload div.upload-cardBody:nth-child(2n) section.right {
+  order: 1;
+  position: relative;
+}
+main div.upload section.left {
+  width: 50%;
+  height: 400px;
+}
+main div.upload section.right {
+  width: 50%;
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+main div.upload section.right div.text {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50px;
+  left: -100px;
+}
+main div.upload section.right.first {
+  background-image: url("../img/美甲師/analia-baggiano-egbB-zLBeDo-unsplash.jpg");
+}
+main div.upload section.right.second {
+  background-image: url("../img/美甲師/ashley-piszek-3iSpG-NHsLs-unsplash.jpg");
+}
+main div.upload section.right.third {
+  background-image: url("../img/美甲師/ines-bahr-sgxhA2BcJCQ-unsplash.jpg");
+}
+main div.upload section.right.fourth {
+  background-image: url("../img/美甲師/no-revisions-02zwWe4ZxFE-unsplash.jpg");
 }
 main div.dream {
   border-radius: 30px 0 30px 0;
@@ -67,9 +99,12 @@ main div.dream {
   border: 3px solid #F0A6A6;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 80%;
   margin: 20px auto;
   background-color: white;
+}
+main div.dream h1 {
+  margin-bottom: 50px;
 }
 main div.dream label {
   font-size: 20px;
@@ -88,7 +123,8 @@ main div.dream .fake-input img.fake-img {
 main div.dream input {
   height: 50px;
   font-size: 20px;
-  margin: 20px 0;
+  margin: 50px 0;
+  width: 80%;
 }
 main div.dream input.imgFile {
   border: none;
@@ -118,4 +154,51 @@ main div.dream div.submitSection button.sub {
 main div.dream div.submitSection button.sub:hover {
   background-color: #F0A6A6;
   color: white;
+}
+
+@media (max-width: 992px) {
+  main div.upload div.upload-card div.upload-cardBody section.right {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  main div.upload div.upload-card div.upload-cardBody section.right {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  main div.banner h1 {
+    font-size: 30px;
+  }
+  main div.banner h2 {
+    font-size: 28px;
+  }
+  main div.upload div.upload-card div.upload-cardBody {
+    margin-bottom: 80px;
+    position: relative;
+    display: flex;
+  }
+  main div.upload div.upload-card div.upload-cardBody section.left {
+    width: 100%;
+  }
+  main div.upload div.upload-card div.upload-cardBody section.left div.text {
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    width: 250px;
+    height: 250px;
+  }
+  main div.upload div.upload-card div.upload-cardBody section.right {
+    width: 100%;
+  }
+  main div.upload div.upload-card div.upload-cardBody section.right div.text {
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    width: 250px;
+    height: 250px;
+  }
+  main div.dream h1 {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=美甲師留言板.css.map */
