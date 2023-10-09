@@ -7,8 +7,9 @@ $(document).ready(function () {
     console.log(divWidth);
     console.log(imgCount);
     // 動態新增li的數量 用img的長度來抓
-    for (let i = 0; i < imgCount; i++) {
-        $(".slider").append('<li></li>')
+    for (let i = 1; i <= imgCount; i++) {
+        let li = `<li>${i}</li>`
+        $(".slider").append(li)
     }
     $(".slider li:first").addClass("clicked");
 

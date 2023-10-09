@@ -9,7 +9,6 @@ main div.banner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,6 +24,19 @@ main div.banner h2 {
   color: white;
   font-size: 30px;
   text-align: center;
+}
+main div.crumbs {
+  display: flex;
+}
+main div.crumbs a {
+  text-decoration: none;
+  color: black;
+}
+main div.crumbs a:hover {
+  color: #F0A6A6;
+}
+main div.crumbs p::before {
+  content: "/";
 }
 main h1 {
   text-align: center;
@@ -53,6 +65,9 @@ main div.upload div.upload-cardBody:nth-child(2n) section.left div.text {
   justify-content: center;
   align-items: center;
 }
+main div.upload div.upload-cardBody:nth-child(2n) section.left div.text h2 {
+  margin-bottom: 20px;
+}
 main div.upload div.upload-cardBody:nth-child(2n) section.right {
   order: 1;
   position: relative;
@@ -80,6 +95,9 @@ main div.upload section.right div.text {
   align-items: center;
   top: 50px;
   left: -100px;
+}
+main div.upload section.right div.text h2 {
+  margin-bottom: 20px;
 }
 main div.upload section.right.first {
   background-image: url("../img/美甲師/analia-baggiano-egbB-zLBeDo-unsplash.jpg");

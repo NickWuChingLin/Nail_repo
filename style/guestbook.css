@@ -51,6 +51,20 @@ div.main-title span.btn:hover {
   color: white;
 }
 
+div.crumbs {
+  display: flex;
+}
+div.crumbs a {
+  text-decoration: none;
+  color: black;
+}
+div.crumbs a:hover {
+  color: #F0A6A6;
+}
+div.crumbs p::before {
+  content: "/";
+}
+
 div.card {
   padding: 20px;
   display: none;
@@ -121,22 +135,21 @@ main {
 }
 main div.file-img {
   text-align: center;
-  font-size: 50px;
   position: relative;
-  margin: 30px 0;
   overflow: hidden;
 }
 main div.file-img div.file-plus {
   background-color: white;
   margin: 0 auto;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   font-size: 150px;
-  line-height: 300px;
+  line-height: 200px;
 }
 main div.file-img div.fake-img {
   position: relative;
+  margin-top: 20px;
 }
 main div.file-img div.fake-img input.imgFile {
   cursor: pointer;
@@ -231,16 +244,21 @@ main div.submitSection button:hover {
     display: block;
   }
   main h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   main div.file-img {
     margin: 0;
   }
   main div.file-img div.file-plus {
-    width: 250px;
-    height: 250px;
-    line-height: 250px;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
     margin-bottom: 0;
+  }
+  main div.file-img img.newImg {
+    width: 200px;
+    height: 200px;
+    display: none;
   }
   main div.dream textarea {
     font-size: 20px;

@@ -288,7 +288,7 @@ main div.card div.card-body div.redheart {
     gap: 50px;
   }
   main section.right div.card {
-    border-bottom: 5px dashed #F0A6A6;
+    min-width: 200px;
   }
   main section.right div.card:last-child {
     border-bottom: none;

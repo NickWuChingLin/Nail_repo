@@ -381,7 +381,8 @@ main {
             gap: 50px;
 
             div.card {
-                border-bottom: 5px dashed #F0A6A6;
+                min-width: 200px;
+                // border-bottom: 5px dashed #F0A6A6;
             }
 
             div.card:last-child {

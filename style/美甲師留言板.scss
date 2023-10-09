@@ -8,7 +8,7 @@ main {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        margin-bottom: 100px;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -30,7 +30,31 @@ main {
     }
 
     padding: 20px;
+
     // background-color: rgb(240, 240, 240);
+    div.crumbs {
+        display: flex;
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: #F0A6A6;
+            }
+
+
+        }
+
+        p {
+            &::before {
+                content: "/";
+            }
+
+
+        }
+
+    }
 
     h1 {
         text-align: center;
@@ -61,6 +85,10 @@ main {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+
+                        h2 {
+                            margin-bottom: 20px;
+                        }
                     }
                 }
 
@@ -100,6 +128,10 @@ main {
                 align-items: center;
                 top: 50px;
                 left: -100px;
+
+                h2 {
+                    margin-bottom: 20px;
+                }
             }
         }
 

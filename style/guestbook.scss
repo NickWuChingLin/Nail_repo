@@ -71,6 +71,29 @@ div.main-title {
 
 }
 
+div.crumbs {
+    display: flex;
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: #F0A6A6;
+        }
+
+
+    }
+
+    p {
+        &::before {
+            content: "/";
+        }
+
+
+    }
+
+}
 
 //  留言區
 div.card {
@@ -160,26 +183,27 @@ main {
 
     div.file-img {
         text-align: center;
-        font-size: 50px;
+        // font-size: 50px;
         position: relative;
-        margin: 30px 0;
+        // margin: 30px 0;
         overflow: hidden;
+        // border: 1px solid black;
 
         div.file-plus {
             background-color: white;
             margin: 0 auto;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             // border: 1px solid black;
             border-radius: 50%;
             font-size: 150px;
-            line-height: 300px;
+            line-height: 200px;
 
         }
 
         div.fake-img {
             position: relative;
-
+            margin-top: 20px;
 
             input.imgFile {
                 cursor: pointer;
@@ -292,6 +316,7 @@ main {
 
 @media (max-width:600px) {
 
+
     div.banner {
         div.textSection {
             h1.banner-title {
@@ -311,17 +336,25 @@ main {
 
     main {
         h1 {
-            font-size: 24px;
+            font-size: 20px;
         }
 
         div.file-img {
             margin: 0;
 
+
             div.file-plus {
-                width: 250px;
-                height: 250px;
-                line-height: 250px;
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
                 margin-bottom: 0;
+            }
+
+            img.newImg {
+
+                width: 200px;
+                height: 200px;
+                display: none;
             }
         }
 

@@ -26,8 +26,8 @@ window.addEventListener("load", () => {
             image.src = window.URL.createObjectURL(fileImg.files[0])
             console.log(image.src)
             preImg.appendChild(image);
-            image.style.width = "300px"
-            image.style.height = "300px"
+            image.style.width = "200px"
+            image.style.height = "200px"
         }
     })
 })

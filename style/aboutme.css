@@ -325,4 +325,39 @@ main div.aboutMe div.contact-section p {
   main div.price div.price-card {
     width: 80%;
   }
+  main div.card-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  main div.card-img div.card-body {
+    justify-content: center;
+    display: flex;
+  }
+  main div.card-img div.card-body div.up {
+    border-radius: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  main div.card-img div.card-body div.up h2 {
+    margin-top: 50px;
+  }
+  main div.card-img div.card-body div.up.first {
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../img/aboutme/laura-chouette-ChYM19VFA1s-unsplash.jpg");
+  }
+  main div.card-img div.card-body div.up.seond {
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../img/aboutme/laura-chouette-OEqCPOo4jYw-unsplash.jpg");
+  }
+  main div.card-img div.card-body div.up.third {
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../img/aboutme/mia-moessinger-SN61sdC4e4E-unsplash.jpg");
+  }
+  main div.card-img div.card-body div.up.fourth {
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../img/aboutme/laura-chouette-_uWvakAlmPA-unsplash.jpg");
+  }
+  main div.card-img div.card-body div.down {
+    display: none;
+  }
 }/*# sourceMappingURL=aboutme.css.map */

@@ -12,14 +12,18 @@ $(document).ready(function () {
         readFile.readAsDataURL(files)
         readFile.addEventListener("load", (e) => {
             let img = document.querySelector(".newImg");
-            img.src = readFile.result
-            img.style.width = "300px";
-            img.style.height = "300px";
-            img.style.position = " absolute";
-            img.style.top = " 0";
-            img.style.left = "0";
-            img.style.borderRadius = "50%";
+            img.src = readFile.result;
 
+            img.style.width = "200px";
+            img.style.height = "200px";
+            $(".newImg").css({
+                "display": "block"
+            })
+            // img.style.position = " absolute";
+            // img.style.top = " 0";
+            // img.style.left = "0";
+            img.style.borderRadius = "50%";
+            $(".file-plus").css("display", "none")
         })
     })
 });

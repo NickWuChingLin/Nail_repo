@@ -32,6 +32,32 @@ main {
     background-color: rgb(240, 240, 240);
     padding: 30px 50px;
 
+    div.crumbs {
+        display: flex;
+        margin-bottom: 50px;
+        margin-left: 0;
+
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: #F0A6A6;
+            }
+
+
+        }
+
+        p {
+            &::before {
+                content: "/";
+            }
+
+
+        }
+
+    }
+
     h1 {
         text-align: center;
 
@@ -219,7 +245,7 @@ main {
                 // height: 200px;
                 margin: 0 auto;
                 border-bottom: 4px dashed #F0A6A6;
-                min-width: 400px;
+                min-width: 300px;
                 padding: 30px;
 
                 div.card-img {
