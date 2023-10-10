@@ -64,6 +64,17 @@ main {
 
     }
 
+    div.bigger-img {
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(39, 60, 125, 0.5);
+
+        position: fixed;
+        top: 0;
+    }
+
     h1 {
         text-align: center;
 

@@ -125,7 +125,7 @@ div.cardSection div.card-body div.card-img.eight {
 }
 
 main {
-  background-color: #F0A6A6;
+  background-color: rgb(240, 240, 240);
   padding: 50px;
   position: relative;
   display: flex;
@@ -139,7 +139,7 @@ main div.file-img {
   overflow: hidden;
 }
 main div.file-img div.file-plus {
-  background-color: white;
+  border: 3px solid black;
   margin: 0 auto;
   width: 200px;
   height: 200px;
@@ -168,7 +168,6 @@ main div.file-img div.fake-img img {
 }
 main h1 {
   text-align: center;
-  color: rgb(247, 244, 244);
   margin: 20px;
   margin-bottom: 50px;
 }

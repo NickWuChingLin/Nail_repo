@@ -497,6 +497,23 @@ main {
 
 }
 
+main {
+    position: relative;
+}
+
+
+
+
+img.goTop {
+    z-index: 2;
+    bottom: 50px;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    display: none;
+    transition: all 0.5s;
+}
+
 
 // 卡片區域
 div.primary-card {
