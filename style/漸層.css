@@ -136,6 +136,9 @@ main div.all-card div.card div.card-body button a {
   }
 }
 @media (max-width: 768px) {
+  div.banner h1 {
+    font-size: 36px;
+  }
   main div.all-card {
     display: grid;
     grid-template-columns: auto auto;

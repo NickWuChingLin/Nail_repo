@@ -1,0 +1,9 @@
+img.goTop {
+  z-index: 2;
+  bottom: 50px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  display: none;
+  transition: all 0.5s;
+}/*# sourceMappingURL=goTop.css.map */

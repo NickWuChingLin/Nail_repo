@@ -194,6 +194,12 @@ main {
 }
 
 @media (max-width:768px) {
+    div.banner {
+        h1 {
+            font-size: 36px;
+        }
+    }
+
     main {
         div.all-card {
             display: grid;

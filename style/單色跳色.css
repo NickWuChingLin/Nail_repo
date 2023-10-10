@@ -71,6 +71,7 @@ main div.all-card div.card div.card-img {
   margin: 50px auto;
   overflow: hidden;
   border-radius: 50%;
+  cursor: pointer;
 }
 main div.all-card div.card div.card-img img {
   width: 100%;
@@ -132,6 +133,9 @@ main div.all-card div.card div.card-body button a {
   }
 }
 @media (max-width: 768px) {
+  div.banner h1 {
+    font-size: 36px;
+  }
   main div.all-card {
     display: grid;
     grid-template-columns: auto auto;

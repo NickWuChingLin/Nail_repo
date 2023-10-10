@@ -16,7 +16,7 @@ div.banner {
         position: relative;
         top: 30%;
         text-align: center;
-        color: #F0A6A6;
+
         font-size: 50px;
     }
 
@@ -189,6 +189,12 @@ main {
 }
 
 @media (max-width:768px) {
+    div.banner {
+        h1 {
+            font-size: 36px;
+        }
+    }
+
     main {
         div.all-card {
             display: grid;
