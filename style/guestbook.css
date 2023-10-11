@@ -127,6 +127,9 @@ main div.file-img {
   position: relative;
   overflow: hidden;
 }
+main div.file-img img.newImg {
+  margin: 0 auto;
+}
 main div.file-img div.file-plus {
   border: 3px solid black;
   margin: 0 auto;

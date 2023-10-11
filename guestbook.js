@@ -26,6 +26,12 @@ $(document).ready(function () {
             $(".file-plus").css("display", "none")
         })
     })
+
+
+    // 新增卡片上去
+    console.log($(".cardSection"))
+
+
 });
 
 
