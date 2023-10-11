@@ -1,11 +1,11 @@
 $(document).ready(function () {
     let index = 0;
     let divWidth = $("div.reImg-section div").width()
-    let imgLength = $(".reImg-slider div").length
+    let imgLength = Math.round($(".reImg-slider div").length / 2 - 1)
     console.log(imgLength)
     console.log(divWidth)
     $(".left").on("click", function () {
-        if (index < 4) {
+        if (index < imgLength) {
             index++
         } else {
             // $(".left").attr("disabled", true);
@@ -17,7 +17,7 @@ $(document).ready(function () {
         })
     })
     $(".right").on("click", function () {
-        if (index < 4) {
+        if (index < imgLength) {
             index++
         } else {
             index = 0

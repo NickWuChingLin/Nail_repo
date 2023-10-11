@@ -12,8 +12,7 @@ div.banner {
 }
 div.banner div.banner-img {
   width: 70%;
-  background-image: url("../img/serve_img/marina-ermakova-hLX_A9wjDWA-unsplash.jpg");
-  background-image: url("../img/serve_img/biel-morro-WW08JFg8SuI-unsplash.jpg");
+  background-image: url("../img/serve_img/lena-taranenko-H18L6UqkzYk-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -75,7 +74,6 @@ main div.price-card div.price h3 {
 }
 main div.price-card div.price p {
   font-size: 16px;
-  color: #c7a9a1;
   transition: all 0.5s;
 }
 main div.price-card div.price p:hover {

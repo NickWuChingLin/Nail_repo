@@ -8,13 +8,13 @@ const fourthImg = document.querySelector(".fourthImg")
 setInterval(() => {
     let bannerImg = document.querySelector("div.banner-img")
 
-    if (bannerImg.style.backgroundImage == 'url("img/serve_img/biel-morro-WW08JFg8SuI-unsplash.jpg")') {
-        bannerImg.style.backgroundImage = 'url("/img/serve_img/lena-taranenko-H18L6UqkzYk-unsplash.jpg")'
-    } else if (bannerImg.style.backgroundImage == 'url("/img/serve_img/lena-taranenko-H18L6UqkzYk-unsplash.jpg")') {
+    if (bannerImg.style.backgroundImage == 'url("img/serve_img/lena-taranenko-H18L6UqkzYk-unsplash.jpg")') {
+        bannerImg.style.backgroundImage = 'url("img/new_img/paz-arando-ldxdJ8wGqcU-unsplash.jpg")'
+    } else if (bannerImg.style.backgroundImage == 'url("img/new_img/paz-arando-ldxdJ8wGqcU-unsplash.jpg")') {
         bannerImg.style.backgroundImage = 'url("img/serve_img/marina-ermakova-hLX_A9wjDWA-unsplash.jpg")'
     }
     else {
-        bannerImg.style.backgroundImage = 'url("img/serve_img/biel-morro-WW08JFg8SuI-unsplash.jpg")'
+        bannerImg.style.backgroundImage = 'url("img/serve_img/lena-taranenko-H18L6UqkzYk-unsplash.jpg")'
     }
 
     console.log(bannerImg)

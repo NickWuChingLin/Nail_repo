@@ -47,6 +47,7 @@ footer section.right a img {
   }
   footer section.right {
     margin-top: 20px;
+    display: flex;
     align-self: flex-end;
   }
 }
