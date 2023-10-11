@@ -11,21 +11,25 @@ footer {
   border-top: 3px solid #F0A6A6;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 footer section.left {
   display: flex;
   flex-direction: column;
+  align-items: start;
 }
 footer section.left img {
-  width: 50px;
-  height: 150px;
   align-self: center;
+  width: 150px;
+  height: 150px;
 }
 footer section.left p {
+  width: 60%;
   align-self: center;
-  font-size: 12px;
+  font-size: 16px;
+  margin: 20px 0 50px 0;
 }
 footer section.right a img {
   margin-right: 30px;
@@ -62,6 +66,7 @@ footer section.right a img {
     width: 150px;
   }
   footer section.left p {
-    font-size: 12px;
+    width: 100%;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=footer.css.map */
