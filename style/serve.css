@@ -29,6 +29,8 @@ div.banner div.banner-content {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  opacity: 0.7;
 }
 div.banner div.banner-content h1 {
   margin-bottom: 50px;

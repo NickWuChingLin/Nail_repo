@@ -224,7 +224,7 @@ main div.reImg {
 }
 main div.reImg div.sliderBtn {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   width: 100%;

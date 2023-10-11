@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $(".card-img img").on("click", function () {
         let largeImg = '<img class="change-img" src =' + $(this).attr("src") + '></img>'
-        $(".bigger-img").html($(largeImg).animate({ height: '60%', width: '50%', }, 500));
+        $(".bigger-img").html($(largeImg).animate({ height: '100%', width: '100%', }, 500));
         // $(".bigger-img").html($(closeImg).animate({
         //     width: "50px",
         //     height: "50px"

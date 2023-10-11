@@ -274,12 +274,12 @@ main {
         margin: 100px auto;
 
         position: relative;
-
+        // z-index: -1;
         overflow: hidden;
 
         div.sliderBtn {
             position: absolute;
-            z-index: 2;
+            z-index: 1;
             display: flex;
             justify-content: space-between;
 

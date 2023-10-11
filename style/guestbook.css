@@ -10,8 +10,10 @@ div.banner {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 div.banner h1 {
+  font-size: 50px;
   color: white;
   margin-bottom: 50px;
 }
@@ -221,11 +223,8 @@ main div.submitSection button:hover {
   }
 }
 @media (max-width: 600px) {
-  div.banner div.textSection h1.banner-title {
-    font-size: 38px;
-  }
-  div.banner div.textSection p {
-    font-size: 14px;
+  div.banner h1 {
+    font-size: 30px;
   }
   div.cardSection {
     display: grid;
