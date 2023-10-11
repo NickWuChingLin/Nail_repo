@@ -35,92 +35,126 @@ div.banner div.banner-content h1 {
   margin-bottom: 50px;
 }
 
-main {
-  padding: 50px;
-  display: grid;
-  grid-template-columns: 25% 75%;
-  justify-content: center;
-  gap: 20px;
-  max-width: 100%;
-  padding-bottom: 20px;
-  background-color: rgb(240, 240, 240);
-}
-main div.startIcon {
-  position: relative;
-  display: none;
-}
-main div.startIcon img {
-  width: 50px;
-  height: 50px;
-}
-main div.startIcon img.start {
-  position: absolute;
-}
-main section.left {
-  background-color: #F0A6A6;
-  border-radius: 5px;
-  height: 280px;
-}
-main section.left h1 {
+main div.newShop h1 {
   text-align: center;
-  margin: 10px 0;
-  border-bottom: 2px solid white;
+  margin: 50px 0;
 }
-main section.left h2 {
-  font-size: 20px;
-  margin-left: 20px;
+main div.newShop h2 {
+  text-align: center;
+  margin-bottom: 50px;
 }
-main section.left h3 {
-  margin-left: 20px;
-  font-size: 18px;
+main div.newShop div.spanSection {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
 }
-main section.left ul {
-  list-style: none;
-  margin-left: 20px;
+main div.newShop div.spanSection span {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #F0A6A6;
 }
-main section.left ul li a {
-  text-decoration: none;
+main div.newShop div.spanSection span:hover {
+  background-color: #F0A6A6;
   color: white;
 }
-main section.left ul li a:hover {
-  background-color: #c7a9a1;
-  color: white;
-  border-radius: 5px;
-  padding: 2px;
+main div.imgContext {
+  margin: 50px 0;
 }
-main section.right {
-  border-radius: 20px;
-  border: 2px solid #F0A6A6;
+main div.imgContext h1 {
+  text-align: center;
+}
+main div.imgContext span {
+  background-color: white;
+  opacity: 0.8;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+main div.imgContext div.imgCard-section {
+  display: flex;
+  padding: 50px;
+}
+main div.imgContext div.imgCard-section section.left {
+  background-image: url("../img/new_img/amy-shamblen-qdPnQuGeuwU-unsplash.jpg");
+  width: 50%;
+  height: 500px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+main div.imgContext div.imgCard-section section.right {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+main div.imgContext div.imgCard-section section.right div.upImg {
+  width: 100%;
+  height: 250px;
+  background-image: url("../img/new_img/persona-mockups-HTMdKgcTNKM-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+main div.imgContext div.imgCard-section section.right div.downImg {
+  width: 100%;
+  height: 250px;
+  display: flex;
+}
+main div.imgContext div.imgCard-section section.right div.downImg div.leftImg {
+  width: 50%;
+  height: 250px;
+  background-image: url("../img/new_img/christina-chauskin-yA7N0pbQWAs-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+main div.imgContext div.imgCard-section section.right div.downImg div.rightImg {
+  width: 50%;
+  height: 250px;
+  background-image: url("../img/new_img/chandra-oh-1DnjXqGy7jM-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+main div.shopCard {
+  gap: 50px;
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 45px;
   justify-content: center;
-  padding: 10px;
 }
-main div.card {
+main div.shopItem {
   overflow: hidden;
   min-width: 30%;
-  border-radius: 10px;
   padding: 20px;
   height: 450px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-main div.card img {
+main div.shopItem img {
   width: 100%;
-  height: 250px;
-  opacity: 80%;
-  border-radius: 50px;
+  height: 300px;
 }
-main div.card div.card-body {
+main div.shopItem div.card-body {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 10px auto;
 }
-main div.card div.card-body span.new {
+main div.shopItem div.card-body span.new {
   font-size: 16px;
   display: flex;
   flex-direction: column;
@@ -130,23 +164,23 @@ main div.card div.card-body span.new {
   text-align: center;
   padding: 5px;
 }
-main div.card div.card-body span.new:hover {
+main div.shopItem div.card-body span.new:hover {
   background-color: #F0A6A6;
   color: white;
 }
-main div.card div.card-body div.heart-section {
+main div.shopItem div.card-body div.heart-section {
   margin-top: 20px;
   display: flex;
   width: 90%;
   justify-content: space-between;
   font-size: 20px;
 }
-main div.card div.card-body div.heart-section p {
+main div.shopItem div.card-body div.heart-section p {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-main div.card div.card-body a.chat-btn {
+main div.shopItem div.card-body .chat-btn {
   padding: 5px;
   border: none;
   text-align: center;
@@ -160,7 +194,7 @@ main div.card div.card-body a.chat-btn {
   text-decoration: none;
   color: white;
 }
-main div.card div.card-body div.heart {
+main div.shopItem div.card-body div.heart {
   width: 30px;
   height: 30px;
   background-image: url("../img/icon/heart.png");
@@ -169,7 +203,7 @@ main div.card div.card-body div.heart {
   transition: all 0.1s;
   cursor: pointer;
 }
-main div.card div.card-body div.redheart {
+main div.shopItem div.card-body div.redheart {
   width: 30px;
   height: 30px;
   background-image: url("../img/icon/changheart.png");
@@ -177,6 +211,102 @@ main div.card div.card-body div.redheart {
   background-size: cover;
   animation-name: huge;
   animation-duration: 0.5s;
+}
+main div.reImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+}
+main div.reImg div.sliderBtn {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main div.reImg div.sliderBtn img {
+  width: 50px;
+  height: 50px;
+}
+main div.reImg div.reImg-slider {
+  display: flex;
+  width: 800px;
+  position: relative;
+}
+main div.reImg div.reImg-section {
+  display: flex;
+  width: 800px;
+  height: 400px;
+}
+main div.reImg div.reImg-section div.leftReImg {
+  width: 400px;
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main div.reImg div.reImg-section div.rightImg {
+  width: 400px;
+  height: 400px;
+  border-left: none;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+main div.reImg div.reImg-section div.leftReImg.first {
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../img/new_img/paz-arando-ldxdJ8wGqcU-unsplash.jpg");
+}
+main div.reImg div.reImg-section div.rightImg.second {
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../img/new_img/davidcohen-qghuLqyh3nE-unsplash.jpg");
+}
+main div.reImg div.reImg-section div.leftReImg.third {
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../img/new_img/cat-han-wZZR8Is6Rtk-unsplash.jpg");
+}
+main div.reImg div.reImg-section div.rightImg.fourth {
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../img/new_img/kris-atomic-Xa8fX8bQCgs-unsplash.jpg");
+}
+main div.reImg div.reImg-section div.leftReImg.five {
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../img/new_img/cloris-ying-dCSvtApISyU-unsplash.jpg");
+}
+main div.reImg div.reImg-section div.rightImg.six {
+  background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)), url("../img/new_img/calugar-ana-maria-gnLanqkBUTY-unsplash.jpg");
+}
+main div.reImg span {
+  margin-top: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+  justify-content: space-evenly;
+  opacity: 0.6;
+  padding: 50px;
+  bottom: 0;
+  left: 300px;
+}
+main div.reImg span h1 {
+  border: none;
+  font-size: 20px;
+  line-height: 2.5;
+}
+main div.reImg span a {
+  width: 50%;
+  border: 2px solid #F0A6A6;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin: 0 auto;
+  padding: 10px;
+}
+main div.reImg span a:hover {
+  background-color: #F0A6A6;
+  color: white;
 }
 
 @keyframes huge {
@@ -224,9 +354,33 @@ main div.card div.card-body div.redheart {
   div.banner div.banner-content h2 {
     font-size: 18px;
   }
-  main section.right {
+  main div.imgContext div.imgCard-section {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main div.imgContext div.imgCard-section section.left {
+    width: 60%;
+  }
+  main div.imgContext div.imgCard-section section.right {
+    width: 40%;
+  }
+  main div.shopCard {
     grid-template-columns: auto auto;
-    gap: 50px;
+  }
+  main div.reImg {
+    width: 500px;
+  }
+  main div.reImg div.reImg-slider {
+    width: 500px;
+  }
+  main div.reImg div.reImg-section {
+    width: 500px;
+  }
+  main div.reImg div.reImg-section div.leftReImg {
+    width: 250px;
+  }
+  main div.reImg div.reImg-section div.rightImg {
+    width: 250px;
   }
 }
 @media (max-width: 768px) {
@@ -255,14 +409,46 @@ main div.card div.card-body div.redheart {
   div.banner div.banner-content h1 {
     margin-bottom: 30px;
   }
-  main {
+  main div.imgContext div.imgCard-section {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 90%;
+  }
+  main div.imgContext div.imgCard-section section.left {
+    width: 100%;
+    background-image: url("../img/new_img/allison-christine-RY9w18Eq-OM-unsplash.jpg");
+  }
+  main div.imgContext div.imgCard-section section.right {
+    width: 100%;
+  }
+  main div.shopCard {
     grid-template-columns: auto;
   }
-  main div.startIcon {
-    display: block;
-    cursor: pointer;
+  main div.reImg {
+    width: 300px;
+    height: 300px;
   }
-  main section.left {
+  main div.reImg div.reImg-slider {
+    width: 300px;
+    height: 300px;
+  }
+  main div.reImg div.reImg-section {
+    width: 300px;
+    height: 300px;
+  }
+  main div.reImg div.reImg-section div.leftReImg {
+    width: 150px;
+  }
+  main div.reImg div.reImg-section div.rightImg {
+    width: 150px;
+  }
+  main div.reImg span {
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: transparent;
+  }
+  main div.reImg span h1 {
     display: none;
   }
 }
@@ -276,21 +462,11 @@ main div.card div.card-body div.redheart {
   main {
     width: 100%;
   }
-  main div.startIcon {
-    display: block;
-    cursor: pointer;
+  main div.imgContext div.imgCard-section section.left {
+    margin: 20px 0;
     width: 100%;
-    margin-right: 300px;
   }
-  main section.right {
-    border: none;
-    grid-template-columns: auto;
-    gap: 50px;
-  }
-  main section.right div.card {
-    min-width: 200px;
-  }
-  main section.right div.card:last-child {
-    border-bottom: none;
+  main div.imgContext div.imgCard-section section.right {
+    width: 100%;
   }
 }/*# sourceMappingURL=new_page.css.map */

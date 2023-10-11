@@ -13,7 +13,7 @@ const innerBanner = document.querySelector(".inner-banner");
 firstBtn.addEventListener("click", () => {
     headerTitle.textContent = "單色/跳色"
     headerContent.textContent = "經典單色美甲油系列提供多種精選顏色，從經典紅色到優雅的深藍色，滿足您不同場合的需求。"
-    innerBanner.style.backgroundImage = `url(${'img/yannes-kiefer-v7ce2oaS2z0-unsplash.jpg'})`;
+    innerBanner.style.backgroundImage = `url(${"img/首頁卡片區域/engin-akyurt-7HC5CX-SBDE-unsplash.jpg"})`;
     console.log(innerBanner);
     firstBtn.classList.add("active")
     secondBtn.classList.remove("active")

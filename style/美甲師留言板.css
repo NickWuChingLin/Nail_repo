@@ -69,6 +69,7 @@ main div.upload div.upload-cardBody:nth-child(2n) section.left div.text h2 {
   margin-bottom: 20px;
 }
 main div.upload div.upload-cardBody:nth-child(2n) section.right {
+  z-index: -1;
   order: 1;
   position: relative;
 }

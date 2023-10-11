@@ -78,6 +78,7 @@ main div.all-card div.card div.card-img {
   border-radius: 50%;
 }
 main div.all-card div.card div.card-img img {
+  cursor: pointer;
   width: 100%;
 }
 main div.all-card div.card div.card-body span.title {

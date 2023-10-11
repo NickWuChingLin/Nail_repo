@@ -1,10 +1,15 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Noto Sans TC", sans-serif;
   font-family: "Noto Serif TC", serif;
+}
+
+body {
+  font-family: "cwTeXFangSong", serif;
 }
 
 header {

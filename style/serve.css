@@ -142,7 +142,6 @@ form.reserveForm {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #eae0d7;
 }
 form.reserveForm div.reserve {
   padding: 20px 0;
@@ -175,8 +174,7 @@ form.reserveForm div.reserve div.reserveInput input.peopleInput {
 }
 form.reserveForm div.reserve div.reserveInput input {
   margin-top: 5px;
-  padding: 10px;
-  font-size: 18px;
+  font-size: 16px;
   height: 30px;
   width: 150px;
 }
@@ -353,7 +351,7 @@ form.reserveForm div.reserve div.reserveTime button.submit-btn {
   }
   form.reserveForm div.reserve {
     width: 80%;
-    height: 650px;
+    height: 680px;
     padding: 20px;
   }
   form.reserveForm div.reserve div.reserveInput {

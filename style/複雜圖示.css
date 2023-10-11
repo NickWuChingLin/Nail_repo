@@ -72,6 +72,7 @@ main div.all-card div.card div.card-img {
 }
 main div.all-card div.card div.card-img img {
   width: 100%;
+  cursor: pointer;
 }
 main div.all-card div.card div.card-body span.title {
   border-radius: 10px;

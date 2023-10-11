@@ -73,6 +73,7 @@ main {
                     order: 2;
                     position: relative;
 
+
                     div.text {
                         width: 300px;
                         height: 300px;
@@ -93,7 +94,7 @@ main {
                 }
 
                 section.right {
-
+                    z-index: -1;
                     order: 1;
                     position: relative;
 

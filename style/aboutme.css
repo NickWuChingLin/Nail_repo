@@ -233,13 +233,13 @@ main div.aboutMe div.contact-section {
   width: 300px;
   height: 200px;
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 20px 0;
-  opacity: 0.6;
+  opacity: 0.8;
   position: absolute;
   bottom: -100px;
   right: -20px;

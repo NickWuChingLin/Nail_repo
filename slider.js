@@ -25,6 +25,8 @@ $(document).ready(function () {
         $(".slider li").not(this).removeClass("clicked")
         timer = setInterval(moveNext, 5000)
     })
+
+    
     function moveNext() {
         // 控制index只能在0~圖片長度之間
         if (index < imgCount - 1) {
