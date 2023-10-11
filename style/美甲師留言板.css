@@ -214,6 +214,7 @@ main div.formReview button {
   width: 30%;
   border: 1px solid #F0A6A6;
   padding: 10px;
+  margin-top: 10px;
 }
 main div.formReview button:hover {
   background-color: #F0A6A6;
