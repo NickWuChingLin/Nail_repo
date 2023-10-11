@@ -28,6 +28,8 @@ window.addEventListener("load", () => {
             preImg.appendChild(image);
             image.style.width = "200px"
             image.style.height = "200px"
+
+
         }
     })
 })

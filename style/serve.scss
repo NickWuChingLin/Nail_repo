@@ -219,8 +219,8 @@ form.reserveForm {
         border: 5px solid #F0A6A6;
         border-radius: 0 50px 0 0;
         background-color: rgb(240, 240, 240);
-        width: 600px;
-        height: 500px;
+        min-width: 90%;
+        // height: 500px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -256,7 +256,7 @@ form.reserveForm {
                 // padding: 20px;
                 font-size: 16px;
                 height: 30px;
-                width: 150px;
+                width: 40%;
             }
         }
 
