@@ -16,10 +16,11 @@ footer {
 }
 footer section.left {
   display: flex;
+  flex-direction: column;
 }
 footer section.left img {
-  width: 100px;
-  height: 50px;
+  width: 50px;
+  height: 150px;
   align-self: center;
 }
 footer section.left p {
@@ -58,7 +59,7 @@ footer section.right a img {
 }
 @media (max-width: 768px) {
   footer section.left img {
-    width: 80px;
+    width: 150px;
   }
   footer section.left p {
     font-size: 12px;

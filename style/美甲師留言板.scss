@@ -215,6 +215,7 @@ main {
 
         div.submitSection {
             margin-left: auto;
+            width: 40%;
 
             button.sub {
                 padding: 10px;
@@ -222,7 +223,8 @@ main {
                 cursor: pointer;
                 background-color: white;
                 border-radius: 5px;
-
+                color: black;
+                width: 100%;
 
                 &:hover {
                     background-color: #F0A6A6;

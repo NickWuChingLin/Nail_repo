@@ -21,11 +21,12 @@ footer {
 
     section.left {
         display: flex;
+        flex-direction: column;
 
         img {
 
-            width: 100px;
-            height: 50px;
+            width: 50px;
+            height: 150px;
             align-self: center;
 
         }
@@ -88,7 +89,7 @@ footer {
     footer {
         section.left {
             img {
-                width: 80px;
+                width: 150px;
             }
 
             p {
