@@ -37,7 +37,7 @@ window.addEventListener("load", () => {
 let formReview = document.querySelector(".formReview")
 console.log(formReview)
 let formContext = document.querySelector(".formContext")
-
+let btnGroup = document.querySelector(".btnGroup")
 
 let subBtn = document.querySelector(".sub")
 subBtn.addEventListener("click", (e) => {
@@ -73,8 +73,8 @@ subBtn.addEventListener("click", (e) => {
     formContext.appendChild(formtext3);
     formContext.appendChild(formtext4);
     formContext.appendChild(formtext5);
-    formContext.appendChild(subBtn);
-    formContext.appendChild(changeBtn);
+    btnGroup.appendChild(subBtn);
+    btnGroup.appendChild(changeBtn);
     subtn.addEventListener("click", () => {
         alert(`提交成功`)
         window.location.reload()
