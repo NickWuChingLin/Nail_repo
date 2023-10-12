@@ -58,6 +58,9 @@ subBtn.addEventListener("click", (e) => {
     let subtn = document.querySelector("button")
     subBtn.innerText = `送出表單`
     subtn.className = 'subBtn'
+    let changeBtn = document.createElement("button")
+    changeBtn.innerText = `修改表單`
+    changeBtn.className = 'subBtn'
     let formImg = document.createElement("img");
     formImg.src = image.src
     formImg.className = `formImg`
@@ -71,8 +74,12 @@ subBtn.addEventListener("click", (e) => {
     formContext.appendChild(formtext4);
     formContext.appendChild(formtext5);
     formContext.appendChild(subBtn);
+    formContext.appendChild(changeBtn);
     subtn.addEventListener("click", () => {
         alert(`提交成功`)
+        window.location.reload()
+    })
+    changeBtn.addEventListener("click", () => {
         window.location.reload()
     })
     document.querySelector("body").style.overflow = 'hidden'
